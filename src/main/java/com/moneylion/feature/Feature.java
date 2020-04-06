@@ -16,12 +16,12 @@ public class Feature {
     private String featureName;
 
     @Column(nullable = false)
-    private boolean state;
+    private Boolean state;
 
     public Feature() {
         super();
     }
-    public Feature(String email, String featureName, boolean state) {
+    public Feature(String email, String featureName, Boolean state) {
         super();
         this.email = email;
         this.featureName = featureName;
@@ -39,10 +39,10 @@ public class Feature {
     public void setFeatureName(String featureName) {
         this.featureName = featureName;
     }
-    public boolean getState() {
+    public Boolean getState() {
         return this.state;
     }
-    public void setState(boolean state) {
+    public void setState(Boolean state) {
         this.state = state;
     }
 }
