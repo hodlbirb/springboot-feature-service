@@ -1,8 +1,0 @@
-com/moneylion/feature/FeatureApplication.class
-com/moneylion/feature/FeatureController.class
-com/moneylion/feature/FeatureRepository.class
-com/moneylion/feature/Feature.class
-com/moneylion/feature/FeatureId.class
-com/moneylion/feature/FeatureController$GetFeatureResponseWrapper.class
-com/moneylion/feature/FeatureService.class
-com/moneylion/feature/FeatureController$PostFeatureRequestWrapper.class

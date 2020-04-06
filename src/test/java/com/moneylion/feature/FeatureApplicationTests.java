@@ -1,10 +1,10 @@
-package com.moneylion.restconfig;
+package com.moneylion.feature;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RestconfigApplicationTests {
+class FeatureApplicationTests {
 
     @Test
     void contextLoads() {
