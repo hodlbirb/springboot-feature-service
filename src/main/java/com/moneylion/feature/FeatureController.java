@@ -38,6 +38,7 @@ public class FeatureController {
         if (feature.isPresent()) {
             res.canAccess = feature.get().getState();
         } else {
+            /* Default is false even if the record doesn't exist */
             res.canAccess = false;
         }
         return new ResponseEntity<GetFeatureResponseWrapper>(res, HttpStatus.OK);

@@ -8,6 +8,6 @@ import java.util.Optional;
 @Repository
 public interface FeatureRepository extends CrudRepository<Feature, FeatureId> {
 
-  @Cacheable("feature")
-  Optional<Feature> findById(FeatureId id);
+    @Cacheable("feature")
+    Optional<Feature> findById(FeatureId id);
 }
