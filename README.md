@@ -27,11 +27,11 @@ make run
 
 Use this endpoint to check user's feature access
 
-- Request:
+### Request
 
 ```curl -s "[::]:9000/feature?email=hello@world&featureName=canWithdraw" | json_xs```
 
-- Response:
+### Response
 
 ```
 {
@@ -44,7 +44,7 @@ Use this endpoint to check user's feature access
 
 Use this endpoint to alter user's feature access
 
-- Request:
+### Request
 
 ```
 curl -v -H'Content-Type: application/json' \
@@ -56,7 +56,7 @@ curl -v -H'Content-Type: application/json' \
     }' "[::]:9000/feature"
 ```
 
-- Response (Not modified, HTTP Status 304):
+### Response (Not modified, HTTP Status 304)
 
 ```
 > POST /feature HTTP/1.1
@@ -70,7 +70,7 @@ curl -v -H'Content-Type: application/json' \
 < Date: Mon, 06 Apr 2020 10:38:52 GMT
 ```
 
-- Response (Modified, HTTP Status 200):
+### Response (Modified, HTTP Status 200)
 
 ```
 > POST /feature HTTP/1.1
