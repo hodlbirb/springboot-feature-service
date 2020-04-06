@@ -1,9 +1,11 @@
 # moneylion-feature-service
 Feature configuration service
 
-## Setup
+## Environment setup
 
-Pull the image from Docker, bootstrap the container and start the RPC service:
+### Docker
+
+Pull a prebuilt image from Docker Hub, bootstrap the container and start the RPC service:
 
 ```
 docker run -it -p9000:8080 \
@@ -11,6 +13,14 @@ docker run -it -p9000:8080 \
       --name feature_service \
       nrdwnd/moneylion-feature-service \
       make run
+```
+
+### Local environment
+
+Or run locally:
+
+```
+make run
 ```
 
 ## GET check current user's access to the feature
