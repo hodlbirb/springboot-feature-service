@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
+import javax.persistence.Version;
 
 @Entity
 @IdClass(FeatureId.class)
@@ -18,6 +19,9 @@ public class Feature {
     @Column(nullable = false)
     private Boolean state;
 
+    @Version
+    private Long version;
+
     public Feature() {
         super();
     }
@@ -26,6 +30,12 @@ public class Feature {
         this.email = email;
         this.featureName = featureName;
         this.state = state;
+    }
+    public Long getVersion() {
+        return this.version;
+    }
+    public void setVersion(Long version) {
+        this.version = version;
     }
     public String getEmail() {
         return this.email;
