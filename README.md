@@ -1,4 +1,4 @@
-Feature configuration service
+# Feature configuration service
 
 ## Environment setup
 
