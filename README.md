@@ -1,4 +1,3 @@
-# moneylion-feature-service
 Feature configuration service
 
 ## Environment setup
